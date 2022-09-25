@@ -29,9 +29,9 @@ const client = new Client({
   token: 'your-super-secret-bot-token',
 });
 
-// When the bot connects successfully announce it
+// When the bot connects successfully, log to the console.
 client.on('ready', () => {
-  console.log(`Bot has ready.`);
+  console.log(`Bot is successfully logged in as ${client.user.name}`);
 });
 
 // Login to Guilded
@@ -54,9 +54,9 @@ const client = new Client({
   token: 'your-super-secret-bot-token',
 });
 
-// When the bot connects successfully announce it
+// When the bot connects successfully, log to the console.
 client.on('ready', () => {
-  console.log(`Bot has ready.`);
+  console.log(`Bot is successfully logged in as ${client.user?.name}`);
 });
 
 // Login to Guilded
