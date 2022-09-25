@@ -16,6 +16,7 @@ Let's create an `index.js` or `index.ts` file so that we can have our bot login!
 
 {% tabs %}
 {% tab title="JavaScript" %}
+{% code overflow="wrap" %}
 ```javascript
 // index.js
 // Import the guilded client
@@ -38,6 +39,7 @@ client.on('ready', () => {
 client.login();
 
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="TypeScript" %}
