@@ -13,9 +13,8 @@ Starting off, we have to listen to the [`messageCreated` ](https://github.com/gu
 
 client.on("messageCreated", async message => {
      if(!message.content.startsWith("!")) return;
-
-     const member = await client.members.fetch(message.serverId, message.createdById);
-     if (member.user.type === "bot") return;
+     // type 0 is for bots
+     if (member.user.type === 0) return;
      
      if(message.content === "!hi") return message.reply("hi there!");
 });
@@ -23,7 +22,7 @@ client.on("messageCreated", async message => {
 {% endcode %}
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="TypeScript" %}
 {% code overflow="wrap" %}
 ```typescript
 // index.ts
@@ -31,9 +30,8 @@ client.on("messageCreated", async message => {
 
 client.on("messageCreated", async message => {
      if(!message.content.startsWith("!")) return;
-
-     const member = await client.members.fetch(message.serverId!, message.createdById);
-     if (member.user.type === "bot") return;
+     // type 0 is for bots
+     if (member.user.type === 0) return;
      
      if(message.content === "!hi") return message.reply("hi there!");
 });
