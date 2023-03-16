@@ -40,12 +40,8 @@ client.on("messageCreated", async message => {
 {% endtab %}
 {% endtabs %}
 
-Now, let's explain what this code does. Inside the event listener, we have an [asynchronous ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async\_function)[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow\_functions). This allows us to resolve the [promises ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise)returned by some of our method calls. Inside this function, the first thing we do is check whether the message starts with our prefix (we chose `!` for example). If it doesn't, then we ignore the message.&#x20;
+Now, let's explain what this code does. Inside the event listener, we have an [asynchronous ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async\_function)[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow\_functions). This allows us to resolve the [promises ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise)returned by some of our method calls. Inside this function, the first thing we do is check whether the message starts with our prefix (we chose `!` for example). If it doesn't, then we ignore the message.&#x20;  
 
-Next, we fetch the member from the API. At the moment, the Guilded API does not give any data regarding the author of a message beyond just their ID, so we need to fetch them to determine whether they are a bot or not. Once we are able to tell, we ignore the incoming message if it's coming from another (or this) bot.
-
-{% hint style="info" %}
-Don't worry about spamming the API with the fetch method call, the library will cache the returned result of the member fetch, meaning the next subsequent messages from this same user will use the local data instead of querying for it.
 {% endhint %}
 
 Finally, we do a simple string comparison to see whether the contents of the message match `!hi` exactly. If it does, the bot will reply to the author with the words `hi there!`. Congratulations, you have now created a bot that responds to messages!
