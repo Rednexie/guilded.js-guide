@@ -14,7 +14,7 @@ Starting off, we have to listen to the [`messageCreated` ](https://github.com/gu
 client.on("messageCreated", async message => {
      if(!message.content.startsWith("!")) return;
      // type 0 is for bots
-     if (member.user.type === 0) return;
+     if(message.author.type === 0) return;
      
      if(message.content === "!hi") return message.reply("hi there!");
 });
@@ -31,7 +31,7 @@ client.on("messageCreated", async message => {
 client.on("messageCreated", async message => {
      if(!message.content.startsWith("!")) return;
      // type 0 is for bots
-     if (member.user.type === 0) return;
+     if(message.author.type === 0) return;
      
      if(message.content === "!hi") return message.reply("hi there!");
 });
@@ -40,7 +40,7 @@ client.on("messageCreated", async message => {
 {% endtab %}
 {% endtabs %}
 
-Now, let's explain what this code does. Inside the event listener, we have an [asynchronous ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async\_function)[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow\_functions). This allows us to resolve the [promises ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise)returned by some of our method calls. Inside this function, the first thing we do is check whether the message starts with our prefix (we chose `!` for example). If it doesn't, then we ignore the message.&#x20;  
+Now, let's explain what this code does. Inside the event listener, we have an [asynchronous ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async\_function)[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow\_functions). This allows us to resolve any [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Promise) returned by some of our method calls later on. Inside this function, the first thing we do is check whether the message starts with our prefix (we chose `!` for example). If it doesn't, then we ignore the message.&#x20;  
 
 {% endhint %}
 
