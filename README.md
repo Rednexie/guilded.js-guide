@@ -20,7 +20,7 @@ A quick overview of all the sub-packages:
 * `@guildedjs/rest` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/rest#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/rest)) - Utility for making REST requests to the Guilded API. Includes rate-limiting, proxy support, and route utility functions
 * `@guildedjs/ws` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/ws#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/ws)) - Utility for connecting to Guilded's WebSocket gateway and receiving events. Supports replaying events and handling disconnects.
 
-> **This guide assumes that you have a basic understanding of JavaScript and Node.JS. If you don't, it's recommended that you start with learning that first, then proceeding with this guide.**
+> **Warning: This guide assumes that you have a basic understanding of JavaScript and Node.JS. If you don't, it's recommended that you start with learning that first, then proceeding with this guide.**
 
 ## Ready to get started?
 
