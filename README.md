@@ -9,7 +9,7 @@ The library is heavily inspired by discord.js design-wise. We appreciate the wor
 Guilded.js is made up of various sub-packages, allowing more seasoned programmers that only need certain functionalities to install only what they need. However, for most people, you will only ever need to install the main `guilded.js` package.
 
 A quick overview of all the sub-packages:
-
+[!IMPORTANT] Crucial information necessary for users to succeed.
 > [!HINT]
 > This is a hint message.
 > [!WARNING]
