@@ -26,7 +26,6 @@ A quick overview of all the sub-packages:
 
 Here are some of the articles that you're probably looking for.
 
-[setting-up-a-guilded-bot.md](setting-up-a-guilded-bot.md)
+[Setting up a guilded bot](setting-up-a-guilded-bot.md)
 
-[create-a-basic-bot.md](create-a-basic-bot.md)
-{% endcontent-ref %}
+[Create a basic bot](create-a-basic-bot.md)
