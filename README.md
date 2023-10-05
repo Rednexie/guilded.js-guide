@@ -14,13 +14,13 @@ A quick overview of all the sub-packages:
 * `@guildedjs/gil` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/gil#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/gil)) - Our bot command framework, allowing you to skip a lot of the boilerplate needed to make most bots and jump straight into working on your commands.
 
 
-> **Warning: These packages are meant for more seasoned programmers who know exactly what functionality they need. You will likely not need to import any of these as they're already included in the main package.**
+> **⚠ These packages are meant for more seasoned programmers who know exactly what functionality they need. You will likely not need to import any of these as they're already included in the main package.**
 * `@guildedjs/guilded-api-types` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/guilded-api-typings#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/guilded-api-typings)) - Raw typings for the guilded API, suitable for projects that want to interface directly with the API without having to write types of their own.
 * `@guildedjs/webhook-client` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/webhook-client#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/webhook-client)) - Library agnostic client for send messages through Guilded webhooks.
 * `@guildedjs/rest` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/rest#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/rest)) - Utility for making REST requests to the Guilded API. Includes rate-limiting, proxy support, and route utility functions
 * `@guildedjs/ws` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/ws#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/ws)) - Utility for connecting to Guilded's WebSocket gateway and receiving events. Supports replaying events and handling disconnects.
 
-> **Warning: This guide assumes that you have a basic understanding of JavaScript and Node.JS. If you don't, it's recommended that you start with learning that first, then proceeding with this guide.**
+> **⚠ This guide assumes that you have a basic understanding of JavaScript and Node.JS. If you don't, it's recommended that you start with learning that first, then proceeding with this guide.**
 
 ## Ready to get started?
 
