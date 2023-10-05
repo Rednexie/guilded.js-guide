@@ -10,9 +10,9 @@ Guilded.js is made up of various sub-packages, allowing more seasoned programmer
 
 A quick overview of all the sub-packages:
 
-{% hint style="success" %}
+> [!HINT]
+> This is a hint message.
 If you're new to the project, the following packages are likely what you're going to be using.
-{% endhint %}
 
 * `guilded.js` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/guilded.js#readme)**,** [**NPM**](https://www.npmjs.com/package/guilded.js)) - The main library that ties everything together. Contains structures, caching, and other utilities for building your bot.
 * `@guildedjs/gil` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/gil#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/gil)) - Our bot command framework, allowing you to skip a lot of the boilerplate needed to make most bots and jump straight into working on your commands.
