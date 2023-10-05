@@ -9,18 +9,12 @@ The library is heavily inspired by discord.js design-wise. We appreciate the wor
 Guilded.js is made up of various sub-packages, allowing more seasoned programmers that only need certain functionalities to install only what they need. However, for most people, you will only ever need to install the main `guilded.js` package.
 
 A quick overview of all the sub-packages:
-[!IMPORTANT] Crucial information necessary for users to succeed.
-> [!HINT]
-> This is a hint message.
-> [!WARNING]
-> *_This is a warning message._**
-
 > If you're new to the project, the following packages are likely what you're going to be using.
 * `guilded.js` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/guilded.js#readme)**,** [**NPM**](https://www.npmjs.com/package/guilded.js)) - The main library that ties everything together. Contains structures, caching, and other utilities for building your bot.
 * `@guildedjs/gil` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/gil#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/gil)) - Our bot command framework, allowing you to skip a lot of the boilerplate needed to make most bots and jump straight into working on your commands.
 
-{% hint style="warning" %}
-These packages are meant for more seasoned programmers who know exactly what functionality they need. You will likely not need to import any of these as they're already included in the main package.
+
+> *_These packages are meant for more seasoned programmers who know exactly what functionality they need. You will likely not need to import any of these as they're already included in the main package._*
 {% endhint %}
 
 * `@guildedjs/guilded-api-types` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/guilded-api-typings#readme)**,** [**NPM**](https://www.npmjs.com/package/@guildedjs/guilded-api-typings)) - Raw typings for the guilded API, suitable for projects that want to interface directly with the API without having to write types of their own.
