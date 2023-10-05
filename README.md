@@ -12,6 +12,8 @@ A quick overview of all the sub-packages:
 
 > [!HINT]
 > This is a hint message.
+> [!WARNING]
+> This is a warning message.
 
 > If you're new to the project, the following packages are likely what you're going to be using.
 * `guilded.js` ([**GitHub**](https://github.com/guildedjs/guilded.js/tree/main/packages/guilded.js#readme)**,** [**NPM**](https://www.npmjs.com/package/guilded.js)) - The main library that ties everything together. Contains structures, caching, and other utilities for building your bot.
